@@ -35,6 +35,15 @@ body {
     list-style: none;
 }
 
+.btn {
+    cursor: pointer;
+    border: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
 /* logo */
 .logo {
     font-family: 'Raleway';
@@ -45,34 +54,26 @@ body {
     color: var(--dark);
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    text-decoration: none;
 }
 
 .logo.span {
     color: var(--primary-brand-color);
 }
 
-.logo:focus,
-.logo:hover {
-    color: var(--primary-brand-color);
-}
-
 /* header */
 
-.site-nav .link {
+.site-nav .nav {
     color: var(--dark);
     font-weight: 500;
-    text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .nav:hover,
+.site-nav .nav:focus {
     color: var(--primary-brand-color);
 }
 
 .header-address .info {
     color: var(--body-text-color);
-    text-decoration: none;
 }
 
 .header-address .info:hover,
@@ -82,16 +83,18 @@ body {
 
 /* hero */
 .hero {
-    width: 1440px;
-    height: 600px;
     background: var(--dark);
 }
 
-.button.order {
+.order {
     font-family: inherit;
     color: var(--white);
     background-color: var(--primary-brand-color);
-    cursor: pointer;
+}
+
+.order:hover,
+.orfer:focus {
+    background-color: var(--pressed-state);
 }
 
 .hero-title {
@@ -107,7 +110,6 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    letter-spacing: 0.02em;
 }
 
 /* h3 */
@@ -116,7 +118,6 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
 }
 
 /* section team list*/
@@ -130,10 +131,11 @@ body {
     color: var(--Accent);
 }
 
-.footer.link:hover,
-.footer.link:focus {
-    color: var(--pressed-state);
+.footer-span {
+    color: var(--light);
+    line-height: 1.16;
 }
+
 
 /* portfolio */
 .filter {
@@ -144,14 +146,13 @@ body {
     letter-spacing: 0.04em;
 }
 
-.filter .btn {
+.filter .button {
     color: var(--primary-brand-color);
     background-color: var(--Accent);
-    cursor: pointer;
 }
 
-.filter .btn:hover,
-.filter .btn:focus {
+.filter .button:hover,
+.filter .button:focus {
     color: var(--white);
     background-color: var(--pressed-state);
 }
@@ -162,5 +163,4 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
 }
