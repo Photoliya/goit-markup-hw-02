@@ -51,13 +51,13 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.3;
-    color: var(--dark);
+    color: var(--primary-brand-color);
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }
 
 .logo.span {
-    color: var(--primary-brand-color);
+    color: var(--dark);
 }
 
 /* header */
@@ -131,9 +131,8 @@ body {
     color: var(--Accent);
 }
 
-.footer-span {
+.logo.footer-span {
     color: var(--light);
-    line-height: 1.16;
 }
 
 
